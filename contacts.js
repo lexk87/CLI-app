@@ -32,7 +32,7 @@ async function removeContact(contactId) {
     const [removedContact] = contacts.splice(index, 1);
     await writeContacts(contacts);
 
-    return removeContact;
+    return removedContact;
 }
 
 async function addContact(name, email, phone) {
